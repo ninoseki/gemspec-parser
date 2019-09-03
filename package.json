@@ -1,0 +1,43 @@
+{
+  "name": "gemspec-parser",
+  "version": "0.1.0",
+  "description": "A simple parser for gemspec",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint src --ext .ts",
+    "fmt": "prettier --write src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninoseki/gemspec-parser.git"
+  },
+  "author": "Manabu Niseki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninoseki/gemspec-parser/issues"
+  },
+  "homepage": "https://github.com/ninoseki/gemspec-parser#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.3",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-jest": "^22.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}
